@@ -1,2 +1,2 @@
 # Note
-Quantitative change leads to qualitative transformation
+Quantitative change leads to qualitative transformation.
