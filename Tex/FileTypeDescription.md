@@ -10,4 +10,4 @@
 
 ***logo***
 
-![image](https://github.com/htdy/Note/raw/master/Tex/Images/logo.png）
+![image](https://github.com/htdy/Note/raw/master/Tex/Images/logo.png)
