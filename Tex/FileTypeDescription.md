@@ -7,4 +7,7 @@
 |.config|the configuration file for tex file|
 |.tex|the source for to produce dvi or pdf|
 |.dvi|device independent file|
+
+***logo***
+
 ![image](https://github.com/htdy/Note/Tex/Images/logo.png）
