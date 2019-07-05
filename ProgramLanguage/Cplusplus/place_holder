@@ -2,7 +2,7 @@ c++ place_holder 原理概要
 bind(f,a1,_1,a3)
 binder{f,list3{a1,_1,a3}}
 foreach a2s ===> binder(a2)
-list1(a2) {list1[_1]=>2, list1[?]=?}
+list1(a2) {list1[_1]=>a2, list1[?]=?}
 list3(f,list1)
 f(list1[a1],list1[_1],list1[a3])
 f(a1,a2,a3)
