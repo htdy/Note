@@ -6,3 +6,4 @@ list1(a2) {list1[_1]=>a2, list1[?]=?}
 list3(f,list1)
 f(list1[a1],list1[_1],list1[a3])
 f(a1,a2,a3)
+ref:https://accu.org/index.php/journals/1397
