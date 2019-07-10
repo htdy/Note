@@ -9,3 +9,27 @@ cat source.txt | awk -F\| '{sub(/^[[:blank:]]*/,"|",$1);sub(/[[:blank:]]*$/,"",$
 ```
 ./cluster_list.sh | grep \"id\"\: | awk -F\" '{print $4}' | xargs -n1  -I {} ./$1 {}
 ```
+
+* shell if 逻辑运算 数值运算 read (if中==两边空格个数相等，if[[  ]]紧邻)*
+```
+fail=0
+success=0
+while read domain
+do
+   read ip
+   oldresult=`dig @xxx.xxx.xxx.xxx \$domain +short`
+   newresult=`dig @xxx.xxx.xxx \$domain +short`
+   flag="FAILED"
+   if [[ "$ip"=="$oldresult" && "$ip"=="$newresult" ]];then
+      flag="OK"
+      success=`expr $success + 1`
+   else
+      fail=`expr $fail + 1`
+   fi
+   echo "$flag $domain   $ip    $oldresult    $newresult"
+done
+total=`expr $fail + $success`
+echo "total: $total" 
+echo "fail: $fail" 
+echo "success: $success"
+```
