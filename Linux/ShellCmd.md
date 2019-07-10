@@ -10,7 +10,7 @@ cat source.txt | awk -F\| '{sub(/^[[:blank:]]*/,"|",$1);sub(/[[:blank:]]*$/,"",$
 ./cluster_list.sh | grep \"id\"\: | awk -F\" '{print $4}' | xargs -n1  -I {} ./$1 {}
 ```
 
-* shell if 逻辑运算 数值运算 read (if中==两边空格个数相等，if[[  ]]紧邻， expr中变量和运算符空格分割)*
+* shell if 逻辑运算 数值运算 read (if中==两边空格个数相等，if[[  ]]紧邻， expr中变量和运算符空格分割，反引号子命令中$引用变量前要用\转义)*
 ```
 fail=0
 success=0
