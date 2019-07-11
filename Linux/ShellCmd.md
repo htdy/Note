@@ -33,3 +33,13 @@ echo "total: $total"
 echo "fail: $fail" 
 echo "success: $success"
 ```
+
+* vim 文件编码（encoding fileencoding fileencoding） *
+```
+set encoding (显示当前编辑缓冲区中的编码)
+set fileencoding (显示文件磁盘上的编码)
+set fileencodings  (vim 显示时尝试使用的编码集)
+set encoding = utf-8 (设置当前编辑缓冲区中的编码)
+set fileencoding = utf8 (保存文件时使用的编码集)
+iconv -f utf-8 -t utf-16 file -c out
+```
